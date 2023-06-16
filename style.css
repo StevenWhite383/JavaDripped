@@ -270,6 +270,8 @@ footer{
     margin: 3rem;
     justify-content: center;
     display: flex;
+}
+.forewarning p{
     margin-left: 30rem;
     margin-right: 30rem;
     font-size: .85rem;
