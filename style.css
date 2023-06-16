@@ -1,0 +1,427 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: url(./images/homebackground.jpg);
+    top: 0; bottom: 0; left: 0; right: 0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: orange;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+.overlay {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+.overlay:target {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.spacer{
+    min-height: 35em;
+    width: 100%;
+}
+.JavaDriplogo img{
+    z-index: 2;
+    position: absolute;
+    left: 21%;
+    top: -2.5%;
+    max-width: 13rem;
+}
+.navbar{
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0));
+    padding: 2.5% 0;
+    margin: auto auto;
+    top: 0; left: 0; right: 0;
+    text-align: center;
+    float: top;
+    top: 0;
+}
+.navbar a{
+    position: sticky;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: .2rem;
+    margin: 2rem 2rem;
+    transition: color 200ms ease-out;
+}
+.navbar a:hover{
+    color: #791436;
+}
+
+
+.bannerbg{
+    z-index: -1;
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    text-align: center;
+    min-height: 35em;
+}
+.bannerbg img{
+    width: 100%;
+}
+.bannertext h1{
+    position: relative;
+    top: -22rem;
+    left: -28rem;
+    font-size: 3rem;
+    color: #791436;
+}
+.bannertext span{
+    position: relative;
+    top: -22.5rem;
+    left: -28rem;
+    font-size: 1.5rem;
+    color: #791436;
+}
+
+
+footer{
+    position: relative;
+    display: flex;
+    left: 0; right: 0; bottom: 0;
+    height: 6rem;
+    background-color: #791436;
+    color: white;
+    font-weight: bold;
+}
+.footerlinks{
+    padding-top: 2.5rem;
+    margin-left: 13%;
+}
+.footerlinks span{
+    padding: 1rem;
+}
+.footerlinks a{
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.socialmedialinks{
+    padding-top: 1rem;
+    margin-left: 10%;
+
+}
+.socialmedialinks img{
+    float: right;
+    height: 2rem;
+    padding: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/***************************[HOME PAGE]***************************/
+
+#homebgvideo{
+    z-index: -2;
+    position: absolute;
+    top: 0; left: 0;
+}
+#homebgdrink{
+    z-index: -1;
+    width: 40%;
+    transform: rotate(5deg);
+    position: absolute;
+    display: inline-block;
+    right: 15%;
+}
+#homebgwave{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 34rem;
+}
+
+#slogan{
+    font-size: 1.75rem;
+    color: orange;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    top: 15rem;
+    left: 15%;
+}
+.guarantee{
+    color: rgb(255, 122, 184);
+}
+
+.promo img{
+    position: absolute;
+    width: 30%;
+    left: 51%;
+    top: 58rem;
+    transform: rotate(6deg);
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, 0.25);
+}
+.promo h2{
+    position: absolute;
+    top: 62rem; left: 17%;
+    color: #791436;
+    font-size: 3rem;
+}
+.promo span{
+    position: absolute;
+    top: 71rem; left: 17%;
+    color: #791436;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+#newIcon{
+    z-index: 1;
+    width: 8rem;
+    transform: rotate(-20deg);
+    position: relative;
+    top: 91rem;
+    left: 19rem;
+}
+
+.infocards{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    width: 66%;
+    height: 41rem;
+    margin-top: 85rem;
+    margin-left: 17%;
+}
+.infoimg{
+    width: 22.2rem;
+    display: flex;
+    border-radius: .8rem .8rem 0 0;
+}
+.infobox{
+    margin: 2rem;
+    height: 39rem;
+    box-shadow: -.1rem 0 1rem black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: .8rem;
+}
+#infobox1{
+    background-color: #FFB2A6;
+}
+#infobox2{
+    background-color: #FFF89A;
+}
+#infobox3{
+    background-color: #9ADCFF;
+}
+.infotext{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+#infotitle{
+    color: #7E1717;
+    font-size: 2rem;
+}
+
+.forewarning{
+    padding: 3rem;
+    margin: 3rem;
+    justify-content: center;
+    display: flex;
+}
+.warntext{
+    font-size: .85rem;
+    font-style: italic;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+
+.tac{
+    color: #7E1717;
+    font-weight: bold;
+    text-decoration: underline dotted;
+}
+
+
+/***************************[MENU]***************************/
+
+.menumain{
+    background-color: white;
+    position: flex;
+    padding: 2%;
+    padding-left: 4%; padding-right: 4%;
+    margin-left: 15%; margin-right: 15%;
+    margin-top: 4%; margin-bottom: 4%;
+}
+.menumain h2{
+    color: #791436;
+    font-size: 3.5rem
+}
+.menumain img{
+    width: 100%;
+}
+.menumain h3{
+    color: #791436;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+.menugrid{
+    width: 20%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.coffeeoptions{
+    background-color: rgb(0, 0, 0, 0.15);
+    display: grid;
+}
+
+
+
+/***************************[ABOUT US]***************************/
+
+.aboutusmain{
+    background-color: whitesmoke;
+    position: flex;
+    padding: 2%;
+    padding-left: 4%; padding-right: 4%;
+    margin-left: 15%; margin-right: 15%;
+    margin-top: 4%; margin-bottom: 4%;
+}
+
+.aboutusbox1{
+    background-color: #791436;
+    min-height: 28.5rem;
+    margin-bottom: 5rem;
+}
+.aboutusbox1 img{
+    position: relative;
+    margin-top: -3rem;
+    max-width: 30%;
+    float: right;
+    right: 5%;
+}
+.aboutusbox1 h2{
+    position: relative;
+    top: 1rem; left: 2%;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+.aboutusbox1 p{
+    color: whitesmoke;
+    position: relative;
+    margin-top: 7%; margin-left: 2%;
+    margin-right: 40%;
+    padding-bottom: 4%;
+}
+
+.aboutusbox2{
+    background-color: #791436;
+    min-height: 28.5rem;
+    margin-bottom: 5rem;
+}
+.aboutusbox2 img{
+    position: relative;
+    width: 100%;
+}
+.aboutusbox2 h2{
+    position: relative;
+    margin-left: 2%;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+.aboutusbox2 p{
+    color: whitesmoke;
+    position: relative;
+    margin-left: 2%; margin-right: 2%;
+    padding-bottom: 4%;
+}
+
+.aboutusbox3{
+    background-color: #791436;
+    min-height: 28.5rem;
+    margin-bottom: 2rem;
+}
+.aboutusbox3 img{
+    position: relative;
+    margin-top: -3rem;
+    max-width: 30%;
+    float: right;
+    right: 5%;
+}
+.aboutusbox3 h2{
+    position: relative;
+    top: 1rem; left: 2%;
+    color: whitesmoke;
+    font-size: 3rem;
+}
+.aboutusbox3 p{
+    color: whitesmoke;
+    position: relative;
+    margin-top: 7%; margin-left: 2%;
+    margin-right: 40%;
+    padding-bottom: 4%;
+}
+
+
+/***************************[LOCATIONS]***************************/
+
+.locator{
+    position: relative;
+    width: 60rem;
+    height: 38rem;
+    left: 25%;
+    top: 40rem;
+    background-color: whitesmoke;
+    margin-bottom: 9%;
+}
+.gmap{
+    position: relative;
+    left: 7.5%;
+    top: 10%;
+    width: 50rem;
+    height: 30rem;
+}
